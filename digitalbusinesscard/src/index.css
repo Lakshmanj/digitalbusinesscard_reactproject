@@ -59,3 +59,13 @@ body{
 
 
 
+.card-layout{
+    background-color:antiquewhite;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    /* margin-top: 7rem; */
+    margin: 3rem auto 0 auto;
+    height: 370px;
+/* margin :top, left, bottom, right */
+}
