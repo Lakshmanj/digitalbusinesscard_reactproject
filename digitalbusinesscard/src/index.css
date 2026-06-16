@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    background-color: darkslategray;
+    /* font-family: 'Black Ops One', sans-serif;  */
+    /* sans-serif serves as the backup font in the case that the primary font cannot be loaded, this is good coding practice */
+}
+
+.resources{
+    background-color: rgb(43, 57, 57);
+        font-family: 'Black Ops One', sans-serif; 
+}
+
+.resource-list{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    list-style: none;
+    /* removes the space above the navbar and fixes slight misalignment due to the invisible bullets */
+    padding: 0;
+    margin: 0;
+    
+}
+
+.resource-list > li{
+    
+    padding: 25px;
+
+}
+
+
+.resource-list > li > a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(0, 213, 255);
+    position: relative;
+
+}
+
+.resource-list > li > a:hover{
+    transition: transform 0.3s ease;
+    color: aquamarine;
+}
+
+.resource-list > li > a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #61DAFB;
+    transition: width 0.3s ease-in-out;
+}
+
+.resource-list > li > a:hover::after{
+    width: 100%;
+}
+
+
+
