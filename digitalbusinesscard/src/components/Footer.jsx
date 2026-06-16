@@ -1,7 +1,7 @@
 export default function Footer(){
     return(
         <>
-        <footer><h3>yoo this is the footer</h3></footer>
+        <footer><h4>&copy; Laksh Jairam's Digital Business Card Project</h4></footer>
         </>
     )
 }

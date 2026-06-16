@@ -1,8 +1,9 @@
 body{
     margin: 0;
     background-color: darkslategray;
-    /* font-family: 'Black Ops One', sans-serif;  */
+    font-family: 'Inter', sans-serif; 
     /* sans-serif serves as the backup font in the case that the primary font cannot be loaded, this is good coding practice */
+
 }
 
 .resources{
@@ -61,11 +62,51 @@ body{
 
 .card-layout{
     background-color:antiquewhite;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
+    border-radius: 2rem;
+    width: 50%;
     /* margin-top: 7rem; */
     margin: 3rem auto 0 auto;
-    height: 370px;
+    min-height: 370px;
 /* margin :top, left, bottom, right */
+
+
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+}
+
+
+footer{
+    text-align: center;
+    /* margin-top: 50px; */
+}
+
+.info{
+    display: flex;
+    flex-direction: column; /* this will ensure that the image, name, role, and social icons (coming soon) will be all organized in a column */
+    align-items: center;
+    text-align: center;
+    background-color: #E6D5C3;
+    padding-bottom: 2rem;
+    width: 35%;
+    border-radius: 1rem;
+
+}
+
+
+
+
+
+.info > img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.interest-list{
+    display: flex;
+    align-items: right;
+    justify-content: right;
 }
