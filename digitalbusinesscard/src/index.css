@@ -110,3 +110,13 @@ footer{
     align-items: right;
     justify-content: right;
 }
+
+
+.social-links > a{
+    padding: 0.5rem;
+    margin: 5px;
+    border-radius: 100%;
+    border-style: solid;
+    color: rgb(70, 142, 142);
+}
+
