@@ -129,3 +129,7 @@ footer{
     color: rgb(70, 142, 142);
 }
 
+.card-details{
+    padding: 3rem;
+    flex: 1; /* Tells the column to take up all the remaining width not used by the sidebar */
+}
