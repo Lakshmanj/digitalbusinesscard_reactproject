@@ -35,11 +35,12 @@ body{
     font-weight: 600;
     color: rgb(0, 213, 255);
     position: relative;
-
+    transition: transform 0.3s ease;
+    
 }
 
 .resource-list > li > a:hover{
-    transition: transform 0.3s ease;
+    /* transition: transform 0.3s ease; this should be in the base state rather in the hover state, otherwise the browser only knows how to animate it while the mouse is on it*/
     color: aquamarine;
 }
 
@@ -90,7 +91,7 @@ footer{
     background-color: #E6D5C3;
     padding-bottom: 2rem;
     width: 35%;
-    border-radius: 1rem;
+    /* border-radius: 1rem; not needed, adding a smaller border radius to the children inside it pulls them away from the edge. This creates tiny, awkward transparent gaps in the top-left and bottom-left corners of the card. */
 
 }
 
@@ -102,13 +103,21 @@ footer{
     width: 100%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border-radius: 1rem;
+    /* border-radius: 1rem; adding a smaller border radius to the children inside it pulls them away from the edge. This creates those tiny, awkward transparent gaps in the top-left and bottom-left corners of your card.*/
 }
 
 .interest-list{
+    flex-direction: column; /* This ensures that the H3 and the UL stack vertically */
     display: flex;
-    align-items: right;
-    justify-content: right;
+    padding: 1rem 0;
+    /* align-items: right;
+    justify-content: right; right is not a valid, standard flexbox property */
+}
+
+/* Adding this to remove the default browser spacing on the bullet points */
+.interest-list ul {
+    padding-left: 1.5rem;
+    line-height: 1.6;
 }
 
 
